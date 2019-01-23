@@ -1,0 +1,30 @@
++++
+# About/Biography widget.
+widget = "about"
+active = true
+date = "2019-01-23T00:00:00"
+
+# Order that this section will appear in.
+weight = 1
+
+# List your academic interests.
+[interests]
+  interests = [
+  "Mathematical Biology",
+  "High Energy Physics",
+  "Interfaith Leadership"
+  ]
+
+# List your qualifications (such as academic degrees).
+[[education.courses]]
+  course = "Data Manipulation and Visualization"
+  institution = "The College of Idaho"
+  year = 2018
++++
+
+# Biography
+
+I am a junior at The College of Idaho majoring in Mathematics-Physics and minoring in Data Science, Secondary Education, Anthropology-Sociology, and Creative Nonfiction Writing. 
+
+## CV
+{{% staticref "files/cv.pdf" %}}Download my CV{{% /staticref %}}

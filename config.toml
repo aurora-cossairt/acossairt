@@ -40,6 +40,23 @@ enableGitInfo = false
   # Your details.
   name = "Aurora Cossairt"
   bio = "A student at the College of Idaho."
+  
+  # Color Theme
+  color_theme = "coffee"
+  
+  # Font style
+  font = "default"
+  
+  # Your details
+  name = "Aurora Cossairt"
+  role = "Student, in my spare time"
+  
+  # Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
+  organizations = [ { name = "The College of Idaho", url = "http://www.collegeofidaho.edu" } ]
+
+  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  email = "aurora.cossairt@yotes.collegeofidaho.edu"
+  address = "Boone Table, The College of Idaho, Caldwell, ID. USA"
 
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
@@ -87,11 +104,67 @@ enableGitInfo = false
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/jhu247"
+    link = "//github.com/aurora-cossairt"
     text = "Github"
+
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+[params.menus]
+  # Align the main menu to the right of the page? (true/false)
+  align_right = true
+
+[[menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 1
+
+[[menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 2
+
+[[menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 3
+
+[[menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 4
+
+[[menu.main]]
+  name = "Teaching"
+  url = "#teaching"
+  weight = 5
+
+[[menu.main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 6
+  
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 7
+
+# Taxonomies.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
 
 # Taxonomies.
 # [taxonomies]
 #   tag = "tags"
 #   category = "categories"
 #   publication_type = "publication_types"
+
+# Languages
+#   Create a [languages.X] block for each language you want, where X is the language ID.
+
+# Configure the English version of the website.
+[Languages.en]
+  languageCode = "en-us"
